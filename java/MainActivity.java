@@ -80,9 +80,15 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private double tokenLat;
     private double tokenLong;
     private String collectedTokenTitle;
-            
+    private String pointOfInterest;
+        
     // Collected Tokens array
-    public ArrayList<String> collectedTokens = new ArrayList<String>();            
+    public ArrayList<String> collectedTokens = new ArrayList<String>();  
+                
+    // Counter Variables
+    public int coffeeCount;
+    public int beerCount;
+    public int natureCount;
 
   @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -227,6 +233,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             mp.start();
             Toast.makeText(this, "Token Collected", Toast.LENGTH_SHORT).show();
             collectedTokens.add(collectedTokenTitle);
+                
+                
+            if(pointOfInterest == "nature")natureCount++;
+            if(pointOfInterest == "coffee") coffeeCount++;
+            if(pointOfInterest == "beer") beerCount++;    
     
         } else {
             Toast.makeText(this, "Your Location does not match", Toast.LENGTH_SHORT).show();
