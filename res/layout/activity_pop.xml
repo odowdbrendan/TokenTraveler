@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop_bg"
+    tools:context=".PopActivity">
+
+    <Button
+        android:id="@+id/collect_button"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:text="Collect Token"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="328dp" />
+        
+      <Button
+        android:id="@+id/recents_button"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:text="Collect Token"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="328dp" />
+        
+       <Button
+        android:id="@+id/favorite_button"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:text="Collect Token"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="328dp" /> 
+        
+        
+</android.support.constraint.ConstraintLayout>
