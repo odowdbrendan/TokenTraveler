@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private PermissionsManager permissionsManager;
 
     // Dialogs
-    Dialog myDialog;
+    private Dialog myDialog;
 
     // Location Variables
     private GoogleApiClient googleApiClient;
@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     // Used to request a quality of service for location updates from the FusedLocationProviderAPI
     private LocationRequest locationRequest;
 
-    private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     private static final long UPDATE_INTERVAL = 5000, FASTEST_INTERVAL = 5000; // = 5 seconds
 
     // Device Location Variables
@@ -450,7 +449,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
      * the refresh interval and the fastest interval for location updates.
      *
      *
-     * checkPlayServices() -
+     * 
      */
 
     @Override
@@ -488,25 +487,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient, locationRequest, this);
     }
 
-    private boolean checkPlayServices() {
-        GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
-        int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
-
-        if (resultCode != ConnectionResult.SUCCESS) {
-            if (apiAvailability.isUserResolvableError(resultCode)) {
-                apiAvailability.getErrorDialog(this, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST);
-            } else {
-                finish();
-            }
-
-            return false;
-        }
-
-        return true;
-    }
-
-
-
+ 
 
 
 
