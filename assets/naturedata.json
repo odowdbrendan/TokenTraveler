@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Montford Park",
+        "poi": "nature",
+        "selected": false,
+        "favourite": false,
+        "latitude": -82.566490,
+        "longitude": 35.607550
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.566490,
+          35.607550
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pritchard Park",
+        "poi": "nature",
+        "selected": false,
+        "favourite": false,
+        "latitude": -82.554382,
+        "longitude": 35.594719
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.554382,
+          35.594719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Humingbird Park",
+        "poi": "nature",
+        "selected": false,
+        "favourite": false,
+        "latitude": -82.563290,
+        "longitude": 35.603900
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.563290,
+          35.603900
+        ]
+      }
+    }
+  ]
+}
