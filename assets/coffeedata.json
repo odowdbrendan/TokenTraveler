@@ -1,0 +1,149 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "High Five - Broadway",
+        "poi": "coffee",
+        "selected": false,
+        "favourite": false,
+        "latitude": -82.55524,
+        "longitude": 35.60135
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.55524,
+          35.60135
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "High Five - Riverside",
+        "poi": "coffee",
+        "selected": false,
+        "favourite": false,
+        "latitude": -82.59642,
+        "longitude": 35.63985
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.59642,
+          35.63985
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "High Five - Downtown",
+        "poi": "coffee",
+        "selected": false,
+        "favourite": false,
+        "latitude": -82.55342,
+        "longitude": 35.59575
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.55342,
+          35.59575
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Double D's",
+        "poi": "coffee",
+        "selected": false,
+        "favourite": false,
+        "latitude": -82.551480,
+        "longitude": 35.593230
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.551480,
+          35.593230        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Izzy's Coffee Den",
+        "poi": "coffee",
+        "selected": false,
+        "favourite": false,
+        "latitude": -82.553299,
+        "longitude": 35.597401
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.553299,
+          35.597401        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "PennyCup Cofee",
+        "poi": "coffee",
+        "selected": false,
+        "favourite": false,
+        "latitude": -82.563910,
+        "longitude": 35.580370
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.563910,
+          35.580370       ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Odd's Cafe",
+        "poi": "coffee",
+        "selected": false,
+        "favourite": false,
+        "latitude": -82.595400,
+        "longitude": 35.578650
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.595400,
+          35.578650       ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ultra Coffeebar",
+        "poi": "coffee",
+        "selected": false,
+        "favourite": false,
+        "latitude": -82.564540,
+        "longitude": 35.585040
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.564540,
+          35.585040       ]
+      }
+    }
+  ]
+}
