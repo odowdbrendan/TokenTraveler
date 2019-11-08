@@ -79,6 +79,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     // Click Location Variables
     private double tokenLat;
     private double tokenLong;
+    private String collectedTokenTitle;
+            
+    // Collected Tokens array
+    public ArrayList<String> collectedTokens = new ArrayList<String>();            
 
   @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -172,6 +176,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
             tokenLat = (Double) selectedFeature.getNumberProperty("latitude");
             tokenLong = (Double) selectedFeature.getNumberProperty("longitude");
+            collectedTokenTitle = selectedFeature.getStringProperty("title");
 
             showPopup();
         }
@@ -217,9 +222,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         myDialog.cancel();
 
         if (checkLocation(deviceLong, deviceLat, tokenLong, tokenLat)) {
+           
             final MediaPlayer mp = MediaPlayer.create(this, R.raw.collectnoise);
             mp.start();
             Toast.makeText(this, "Token Collected", Toast.LENGTH_SHORT).show();
+            collectedTokens.add(collectedTokenTitle);
+    
         } else {
             Toast.makeText(this, "Your Location does not match", Toast.LENGTH_SHORT).show();
         }
@@ -301,11 +309,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private boolean checkNatureLocation(double deviceLong, double deviceLat, double tokenLong, double tokenLat){
 
-        if(deviceLong == tokenLong && deviceLat == tokenLat){
-
+       if(Math.abs(deviceLong-tokenLong) < 0.03 && (Math.abs(deviceLat-tokenLat) < 0.03)){
+            return true;
         }
-
-        return true;
+        return false;
     }
 
 
