@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    
+    // Access Location Permission
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
